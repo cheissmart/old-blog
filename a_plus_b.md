@@ -2,7 +2,8 @@
 
 #### Discription:
 ```markdown
-output "hello, world"
+input two integers(a and b)
+output the sum of the two integers(a + b)
 ```
 
 ### a_plus_b.cpp
