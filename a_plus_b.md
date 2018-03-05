@@ -1,5 +1,10 @@
 <center><h1>a + b</h1></center>
 
+#### Discription:
+```markdown
+output "hello, world"
+```
+
 ### a_plus_b.cpp
 ```markdown
 #include <iostream>
