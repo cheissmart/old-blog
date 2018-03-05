@@ -29,8 +29,14 @@ int main()
 ```markdown
 #include <stdio.h>
 
+void swap(int* a, int* b) {
+	int c = *a;
+	a = b;
+	*b = c;
+}
+
 int gcd(int a, int b) {
-  while(a %= b) swap(a, b);
+  while(a %= b) swap(&a, &b);
   return b;
 }
 
