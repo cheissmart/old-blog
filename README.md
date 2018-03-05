@@ -1,6 +1,6 @@
 <span></span>
 ## Examples
-<table>
+<table border="1">
   <tr>
     <td><a href="./helloworld">Hello World</a></td>
     <td><a href="./a_plus_b">a + b</a></td>
