@@ -30,9 +30,9 @@ int main()
 #include <stdio.h>
 
 void swap(int* a, int* b) {
-	int c = *a;
-	a = b;
-	*b = c;
+  int c = *a;
+  *a = *b;
+  *b = c;
 }
 
 int gcd(int a, int b) {
