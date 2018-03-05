@@ -37,6 +37,6 @@ int main()
     scanf("%d", &tmp);
     sum += tmp;
   }
-  printf("%d", &sum);
+  printf("%d", sum);
 }
 ```
