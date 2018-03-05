@@ -8,4 +8,5 @@
 [Number Guessing Game](./NumberGuessingGame) ||
 [Sum Of Numbers](./sumOfNumbers) ||
 [n!(Factorial)](./Factorial) ||
-[GCD Iter](./gcdIter)
+[GCD Iter](./gcdIter) ||
+[GCD Recursive](./gcdRecu)
