@@ -19,7 +19,7 @@ int main()
 
 ### HelloWorld.c
 ```markdown
-#include <stdc++.h>
+#include <stdio.h>
 
 int main()
 {
