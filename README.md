@@ -3,4 +3,5 @@
 [Hello World](./helloworld) ||
 [a + b](./a_plus_b) ||
 [Can I Pass ?](./canIpass) ||
-[Max Of Three Numbers](./maxOfThreeNumbers)
+[Max Of Three Numbers](./maxOfThreeNumbers) ||
+[Can I Pass -- Advance](./canIpassAdv)
