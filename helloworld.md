@@ -1,6 +1,6 @@
 ## Hello World
 
-<center>[HOME](./)</center>
+<a href="./">HOME</a>
 
 ### HelloWorld.cpp
 ```markdown
