@@ -1,4 +1,4 @@
 ## Welcome To My Blog
 
-### Code
+## My Code
 [Hello World](./helloworld)
