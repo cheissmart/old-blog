@@ -2,22 +2,22 @@
 ## Examples
 <table>
   <tr>
-    <td>[Hello World](./helloworld)</td>
-    <td>[a + b](./a_plus_b)</td>
-    <td>[Can I Pass ?](./canIpass) </td>
+    <td><a href="./helloworld">Hello World</a></td>
+    <td><a href="./a_plus_b">a + b</a></td>
+    <td><a href="./canIpass">Can I Pass ?</a></td>
   </tr>
   <tr>
-    <td>[Max Of Three Numbers](./maxOfThreeNumbers)</td>
-    <td>[Can I Pass -- Advance](./canIpassAdv)</td>
-    <td>[Can I Pass ?](./canIpass) </td>
+    <td><a href="./maxOfThreeNumbers">Max Of Three Numbers</a></td>
+    <td><a href="./canIpassAdv">Can I Pass -- Advance</a></td>
+    <td><a href="./canIpassAdv">Can I Pass -- Advance</a></td>
   </tr>
   <tr>
-    <td>[Number Guessing Game](./NumberGuessingGame)</td>
-    <td>[Sum Of Numbers](./sumOfNumbers)</td>
-    <td>[n!(Factorial)](./Factorial)</td>
+    <td><a href="./NumberGuessingGame">Number Guessing Game</a></td>
+    <td><a href="./sumOfNumbers">Sum Of Numbers</a></td>
+    <td><a href="./Factorial">Factorial(n!)</a></td>
   </tr>
   <tr>
-    <td>[GCD_Iter](./gcdIter)</td>
-    <td>[GCD_ecursive](./gcdRecu)</td>
+    <td><a href="./gcdIter">GCD_Iter</a></td>
+    <td><a href="./gcdRecu">GCD_ecursive</a></td>
   </tr>
  </table>
