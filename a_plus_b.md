@@ -22,7 +22,7 @@ int main()
 
 ### a_plus_b.c
 ```markdown
-#include <stdc++.h>
+#include <stdio.h>
 
 int main()
 {
