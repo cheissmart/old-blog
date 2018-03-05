@@ -6,5 +6,5 @@
 [Max Of Three Numbers](./maxOfThreeNumbers) ||
 [Can I Pass -- Advance](./canIpassAdv) ||
 [Number Guessing Game](./NumberGuessingGame) ||
-[Sum Of Numbers](./sumOfNumbers)
+[Sum Of Numbers](./sumOfNumbers) ||
 [n!(Factorial)](./Factorial)
