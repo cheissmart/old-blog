@@ -3,7 +3,7 @@
 #### Discription:
 ```markdown
 input three integers
-output the max value amoung the three numbers
+output the max value among the three numbers
 ```
 
 ### maxOfThreeNumbers.cpp
