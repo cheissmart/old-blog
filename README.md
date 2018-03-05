@@ -7,3 +7,4 @@
 [Can I Pass -- Advance](./canIpassAdv) ||
 [Number Guessing Game](./NumberGuessingGame) ||
 [Sum Of Numbers](./sumOfNumbers)
+[n!(Factorial)](./Factorial)
