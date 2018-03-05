@@ -1,6 +1,6 @@
 <a href="./">HOME</a>
 
-## Hello World
+<center># Hello World</center>
 
 ### HelloWorld.cpp
 ```markdown
