@@ -1,12 +1,23 @@
 <span></span>
 ## Examples
-[Hello World](./helloworld) ||
-[a + b](./a_plus_b) ||
-[Can I Pass ?](./canIpass) ||
-[Max Of Three Numbers](./maxOfThreeNumbers) ||
-[Can I Pass -- Advance](./canIpassAdv) ||
-[Number Guessing Game](./NumberGuessingGame) ||
-[Sum Of Numbers](./sumOfNumbers) ||
-[n!(Factorial)](./Factorial) ||
-[GCD Iter](./gcdIter) ||
-[GCD Recursive](./gcdRecu)
+<table>
+  <tr>
+    <td>[Hello World](./helloworld)</td>
+    <td>[a + b](./a_plus_b)</td>
+    <td>[Can I Pass ?](./canIpass) </td>
+  </tr>
+  <tr>
+    <td>[Max Of Three Numbers](./maxOfThreeNumbers)</td>
+    <td>[Can I Pass -- Advance](./canIpassAdv)</td>
+    <td>[Can I Pass ?](./canIpass) </td>
+  </tr>
+  <tr>
+    <td>[Number Guessing Game](./NumberGuessingGame)</td>
+    <td>[Sum Of Numbers](./sumOfNumbers)</td>
+    <td>[n!(Factorial)](./Factorial)</td>
+  </tr>
+  <tr>
+    <td>[GCD_Iter](./gcdIter)</td>
+    <td>[GCD_ecursive](./gcdRecu)</td>
+  </tr>
+ </table>
