@@ -27,7 +27,7 @@ int main()
 
 ### canIpass.c
 ```markdown
-#include <stdc++.h>
+#include <stdio.h>
 
 int main()
 {
