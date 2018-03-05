@@ -1,5 +1,3 @@
-<a href="./">HOME</a>
-
 <center><h1>Hello World</h1></center>
 
 ### HelloWorld.cpp
