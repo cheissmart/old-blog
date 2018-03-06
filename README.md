@@ -21,4 +21,7 @@
     <td><a href="./bubblesort">Bubble Sort .</a></td>
     <td><a href="./selectionsort">Selection Sort .</a></td>
   </tr>
+  <tr>
+    <td><a href="./insertionsort">Insertion Sort .</a></td>
+  </tr>
  </table>
