@@ -8,7 +8,7 @@
   </tr>
   <tr>
     <td><a href="./maxOfThreeNumbers">Max Of Three Numbers .</a></td>
-    <td><a href="./canIpassAdv">Can I Pass -- Advance .</a></td>
+    <td><a href="./canIpassAdv">Can I Pass Advance .</a></td>
     <td><a href="./NumberGuessingGame">Number Guessing Game .</a></td>
   </tr>
   <tr>
