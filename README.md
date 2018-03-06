@@ -7,7 +7,7 @@
     <td><a href="./canIpass">Can I Pass ? .</a></td>
   </tr>
   <tr>
-    <td><a href="./maxOfThreeNumbers">Max Of Three Numbers .</a></td>
+    <td><a href="./maxOfThreeNumbers">Max Of 3 Numbers .</a></td>
     <td><a href="./canIpassAdv">Can I Pass Advance .</a></td>
     <td><a href="./NumberGuessingGame">Number Guessing Game .</a></td>
   </tr>
