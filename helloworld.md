@@ -1,12 +1,12 @@
 <center><h1>Hello World</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 output "hello, world"
 ```
 
 ### HelloWorld.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -18,7 +18,7 @@ int main()
 ```
 
 ### HelloWorld.c
-```markdown
+```c
 #include <stdio.h>
 
 int main()
