@@ -1,13 +1,13 @@
 <center><h1>Max of three numbers</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input three integers
 output the max value among the three numbers
 ```
 
 ### maxOfThreeNumbers.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -27,7 +27,7 @@ int main()
 ```
 
 ### maxOfThreeNumbers.c
-```markdown
+```c
 #include <stdio.h>
 
 int maxOfThreeNumbers(int a, int b, int c) {
