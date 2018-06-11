@@ -1,14 +1,14 @@
 <center><h1>Factorial</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input an integer n
 output n!
 (n! = 1 x 2 x 3 x ... x n)
 ```
 
 ### Factorial.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -23,7 +23,7 @@ int main()
 ```
 
 ### Factorial.c
-```markdown
+```c
 #include <stdio.h>
 
 int main()
