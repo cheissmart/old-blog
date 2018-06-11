@@ -1,7 +1,7 @@
 <center><h1>Bubble Sort</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 Bubble sort, sometimes referred to as sinking sort, is a simple
 sorting algorithm that repeatedly steps through thelist to be
 sorted, compares each pair of adjacent items and swaps them if
@@ -17,7 +17,7 @@ Bubble sort has worst-case and average complexity both О(n2)
 [Bubble Sort Wiki](https://en.wikipedia.org/wiki/Bubble_sort)
 
 ### Bubble_sort.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
