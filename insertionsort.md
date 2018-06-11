@@ -1,7 +1,7 @@
 <center><h1>Insertion Sort</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 Insertion sort is a simple sorting algorithm that builds the final 
 sorted array (or list) one item at a time. It is much less efficient
 on large lists than more advanced algorithms such as quicksort, 
@@ -18,7 +18,7 @@ Average Case：Ο(n2)
 [Insertion Sort Wiki](https://en.wikipedia.org/wiki/Insertion_sort)
 
 ### Insertion_sort.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
