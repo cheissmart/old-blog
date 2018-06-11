@@ -1,13 +1,13 @@
 <center><h1>Sum Of Numbers</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input n and then n integers
 output the sum of the n numbers
 ```
 
 ### sumOfNumbers.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -25,7 +25,7 @@ int main()
 ```
 
 ### sumOfNumbers.c
-```markdown
+```c
 #include <stdio.h>
 
 int main()
