@@ -1,7 +1,7 @@
 <center><h1>Number Guessing Game</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 # sample 
 out:  0 < ? < 100
 in:   50
@@ -15,7 +15,7 @@ out:  bingo answer is 45
 ```
 
 ### NumberGuessingGame.cpp
-```markdown
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -44,6 +44,6 @@ int main()
 ```
 
 ### NumberGuessingGame.c
-```markdown
+```c
 NA
 ```
