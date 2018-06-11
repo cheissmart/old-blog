@@ -1,13 +1,13 @@
 <center><h1>GCD Recu</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input two integers a and b
 output the gcd of a and b
 ```
 
 ### gcdRecu.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -25,7 +25,7 @@ int main()
 ```
 
 ### gcdRecu.c
-```markdown
+```c
 #include <stdio.h>
 
 int gcd(int a, int b) {
