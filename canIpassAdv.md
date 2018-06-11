@@ -1,13 +1,13 @@
 <center><h1>Can I Pass -- Advance</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input a score. if the score is not in the range (0 <= score <= 100), input again until the score is valid;
 output "Pass" if the score >= 60 and "Fail" if the score < 60
 ```
 
 ### canIpassAdv.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -26,7 +26,7 @@ int main()
 ```
 
 ### canIpassAdv.c
-```markdown
+```cpp
 #include <stdio.h>
 
 int main()
