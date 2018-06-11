@@ -1,13 +1,13 @@
 <center><h1>a + b</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input two integers(a and b)
 output the sum of the two integers(a + b)
 ```
 
 ### a_plus_b.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -21,7 +21,7 @@ int main()
 ```
 
 ### a_plus_b.c
-```markdown
+```c
 #include <stdio.h>
 
 int main()
