@@ -1,13 +1,13 @@
 <center><h1>GCD Iter</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 input two integers a and b
 output the gcd of a and b
 ```
 
 ### gcdIter.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -26,7 +26,7 @@ int main()
 ```
 
 ### gcdIter.c
-```markdown
+```c
 #include <stdio.h>
 
 void swap(int* a, int* b) {
