@@ -1,7 +1,7 @@
 <center><h1>Selection Sort</h1></center>
 
 #### Discription:
-```markdown
+```cpp
 In computer science, selection sort is a sorting algorithm, 
 specifically an in-place comparison sort. It has O(n2) time 
 complexity, making it inefficient on large lists, and generally
@@ -14,7 +14,7 @@ particularly where auxiliary memory is limited.
 [Selection Sort Wiki](https://en.wikipedia.org/wiki/Selection_sort)
 
 ### Selection_sort.cpp
-```markdown
+```cpp
 #include <iostream>
 
 using namespace std;
