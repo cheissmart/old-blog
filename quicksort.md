@@ -10,7 +10,9 @@ Average Case: O(nlogn)
 
 ### quick_sort.cpp
 ```cpp
-#include <iostream>
+
+
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -36,8 +38,8 @@ void quicksort(int *data, int left, int right)
         if (i > j)
             break;
 
-        swap(&data[i], &data[j]);                                               }
-    swap(&data[left], &data[j]);
+        swap(data[i], data[j]);                                               }
+    swap(data[left], data[j]);
     quicksort(data, left, j - 1);
     quicksort(data, j + 1, right);
 }
@@ -47,7 +49,7 @@ int main()
   int n, a[10000];
   cin >> n;
   for(int i=0;i<n;i++) cin >> a[i];
-  quick_sort(a, 0, n - 1);
+  quicksort(a, 0, n - 1);
   for(int i=0;i<n;i++) cout << a[i] << " ";
   cout << endl;
 }
