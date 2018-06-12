@@ -6,10 +6,6 @@
   <li><a href="./canIpass">Can I Pass ?</a></li>
   <li><a href="./maxOfThreeNumbers">Max Of 3 Numbers</a></li>
   <li><a href="./canIpassAdv">Can I Pass Advance</a></li>
-</ul>
-
-## Advance
-<ul>
   <li><a href="./NumberGuessingGame">Number Guessing Game</a></li>
 </ul>
 
@@ -26,4 +22,6 @@
   <li><a href="./bubblesort">Bubble Sort</a></li>
   <li><a href="./selectionsort">Selection Sort</a></li>
   <li><a href="./insertionsort">Insertion Sort</a></li>
+  <li><a href="./quicksort">Quick Sort</a></li>
+  <li><a href="./mergesort">Merge Sort</a></li>
 </ul>
