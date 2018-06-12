@@ -19,9 +19,9 @@
 
 ## Sorting Algorithm
 <ul>
-  <li><a href="./bubblesort">Bubble Sort</a></li>
-  <li><a href="./selectionsort">Selection Sort</a></li>
-  <li><a href="./insertionsort">Insertion Sort</a></li>
-  <li><a href="./quicksort">Quick Sort</a></li>
-  <li><a href="./mergesort">Merge Sort</a></li>
+  <li><a href="./bubblesort">Bubble Sort O(n<sup>2</sup>)</a></li>
+  <li><a href="./selectionsort">Selection Sort O(n<sup>2</sup>)</a></li>
+  <li><a href="./insertionsort">Insertion Sort O(n<sup>2</sup>)</a></li>
+  <li><a href="./quicksort">Quick Sort O(nlogn)</a></li>
+  <li><a href="./mergesort">Merge Sort O(nlogn)</a></li>
 </ul>
