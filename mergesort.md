@@ -10,8 +10,6 @@ Average Case: O(nlogn)
 
 ### merge_sort.cpp
 ```cpp
-
-
 #include <bits/stdc++.h>
 
 using namespace std;
