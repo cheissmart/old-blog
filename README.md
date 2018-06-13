@@ -24,4 +24,11 @@
   <li><a href="./insertionsort">Insertion Sort O(n<sup>2</sup>)</a></li>
   <li><a href="./quicksort">Quick Sort O(nlogn)</a></li>
   <li><a href="./mergesort">Merge Sort O(nlogn)</a></li>
+  <li><a href="./countingsort">Counting Sort O(n)</a></li>
+</ul>
+
+## Searching Algorithm
+<ul>
+  <li><a href="./linearsearch">Linear Search O(n)</a></li>
+  <li><a href="./binarysearch">Binary Search O(logn)</a></li>
 </ul>
