@@ -43,11 +43,11 @@ section {
 }
 #intro {
 	color: white;
-	margin: 0px 50px 0px 50px;
+	margin: 0px 20% 100px 20%;
 }
 #contact{
 	padding: 50px;margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 100px; margin-bottom: 100px;
 	width: 60%;height: 50%;
 	background-color: rgba(255, 255, 255, 0.95);
 }
