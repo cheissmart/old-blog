@@ -1,0 +1,128 @@
+html, body {
+	background-color: rgba(50, 50, 60, 0.7);
+	font-family: 'Amaranth', sans-serif;
+	margin: 0px; scroll-behavior: smooth;
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+iframe{
+	margin: 0 auto;
+}
+header {
+	background-color: rgba(255, 255, 255, 0.95);
+	width: 100%; padding-left: 8px;
+	position: fixed;
+	top: 0px; left: 0px; z-index:1;
+	box-shadow: 0px 1px 5px #888888;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
+}
+header>#logo {
+	margin:3px;
+	display: inline-block;
+}
+header>#logo>.ch {
+	font-family: 'Lobster', cursive;
+}
+header>#nav {
+	display: inline-block;
+}
+header>#nav>span {
+	font-size: 25px;
+	margin-left: 30px;
+}
+section {
+	padding-top: 100px;
+	margin-top: 100px;
+	font-size: 20px;
+}
+#intro {
+	color: white;text-align:center;
+	margin: 0px 50px 0px 50px;
+}
+#contact{
+	padding: 50px;margin: 0 auto;
+	margin-top: 100px;
+	width: 60%;height: 50%;
+	background-color: rgba(255, 255, 255, 0.95);
+}
+#projects {
+	text-align: center;
+}
+#experience{
+	background-color: rgba(255, 255, 255, 0.95);
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 50%;
+	padding : 50px;
+}
+#nav .nav_btn{
+	margin:0px;
+	padding:15px;
+}
+#nav span:hover{
+	background-color: #ddd;
+}
+.topnav .icon {
+	display:none;
+	position:absolute;right:10%;top:30px;
+}
+article.project {
+	padding:15px;margin:30px;
+	border-radius: 15px;
+}
+.board-r {
+	background-color: rgba(255, 255, 255, 0.95);
+	padding: 50px; margin: 0 auto;
+}
+.dsq {
+	width:50%;margin:0 auto;
+	background-color:rgb(50, 50, 60);
+	padding:10px;border-radius: 10px;
+}
+#footer {
+	color:white;padding:30px;text-align: center;
+	background-color: rgb(50, 50, 60);
+}
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	
+	iframe{
+		width: 100%;
+	}
+	
+}
+@media only screen and (max-width: 768px) {
+	.topnav .nav_btn{display: none;}
+	.topnav .icon {
+		/*float: right;*/
+		display: block;
+	 }
+}
+
+@media only screen and (max-width: 768px) {
+	.topnav.responsive {
+		position: relative;
+		width: 100%;
+	}
+	.responsive .nav_btn {
+		float: none;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+}
+.gototop{
+	display:none;
+	z-index:1;
+	width:30px;height:100%;
+	background-color:transparent;;
+}
+.gototop:hover{
+	background-color:rgba(0, 0, 0, 0.8);
+}

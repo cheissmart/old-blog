@@ -6,147 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Amaranth|Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>劉澈 Liu Che - Homepage</title>
-    <style>
-    	html, body {
-        	background-color: rgba(50, 50, 60, 0.7);
-            font-family: 'Amaranth', sans-serif;
-			margin: 0px; scroll-behavior: smooth;
-			background-image: url('bg.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-			overflow-x: hidden;
-        }
-		iframe{
-			margin: 0 auto;
-		}
-		header {
-			background-color: rgba(255, 255, 255, 0.95);
-			width: 100%; padding-left: 8px;
-			position: fixed;
-			top: 0px; left: 0px; z-index:1;
-			box-shadow: 0px 1px 5px #888888;
-			-webkit-user-select: none;  /* Chrome all / Safari all */
-		    -moz-user-select: none;     /* Firefox all */
-		    -ms-user-select: none;      /* IE 10+ */
-		    user-select: none;          /* Likely future */ 
-		}
-		header>#logo {
-			margin:3px;
-			display: inline-block;
-		}
-		header>#logo>.ch {
-			font-family: 'Lobster', cursive;
-		}
-		header>#nav {
-			display: inline-block;
-		}
-		header>#nav>span {
-			font-size: 25px;
-			margin-left: 30px;
-		}
-		section {
-			padding-top: 100px;
-			margin-top: 100px;
-			font-size: 20px;
-		}
-		#intro {
-			color: white;text-align:center;
-			margin: 0px 50px 0px 50px;
-		}
-		#contact{
-			padding: 50px; margin: 0 auto;
-			width: 30%;height: 50%;
-			position: relative; left: 38%;
-		}
-		#projects {
-			text-align: center;
-		}
-		#nav .nav_btn{
-			margin:0px;
-			padding:15px;
-		}
-		#nav span:hover{
-			background-color: #ddd;
-		}
-		.topnav .icon {
-			display:none;
-			position:absolute;right:10%;top:30px;
-		}
-		article.project {
-			padding:15px;margin:30px;
-			border-radius: 15px;
-		}
-		.board-r {
-			background-color: rgba(255, 255, 255, 0.95);
-			padding: 50px; margin: 0 auto;
-		}
-		.board-l {
-			background-color: rgba(255, 255, 255, 0.95);
-			width: 25%;padding: 50px;display:inline-block;
-		}
-		.dsq {
-			width:50%;margin:0 auto;
-			background-color:rgb(50, 50, 60);
-			padding:10px;border-radius: 10px;
-		}
-		#footer {
-			color:white;padding:30px;text-align: center;
-			background-color: rgb(50, 50, 60);
-		}
-		@media only screen and (max-width: 768px) {
-			/* For mobile phones: */
-			
-			#contact{
-				width: 80%;
-				padding: 0px;
-				right:0px;
-				left: 0px;
-			}
-			#experience{
-				width: 80%;
-				/*padding: 50px;*/
-				margin: 0 auto;
-			}
-			.board-l{
-				width: auto;padding:50px;
-				margin: 0 auto;
-			}
-			iframe{
-				width: 100%;
-			}
-			
-		}
-		@media only screen and (max-width: 768px) {
-			.topnav .nav_btn{display: none;}
-			.topnav .icon {
-				/*float: right;*/
-				display: block;
-			 }
-		}
-		
-		@media only screen and (max-width: 768px) {
-			.topnav.responsive {
-				position: relative;
-				width: 100%;
-			}
-			.responsive .nav_btn {
-				float: none;
-				display: block;
-				text-align: center;
-				width: 100%;
-			}
-		}
-		.gototop{
-			display:none;
-			z-index:1;
-			width:30px;height:100%;
-			background-color:transparent;;
-		}
-		.gototop:hover{
-			background-color:rgba(0, 0, 0, 0.8);
-		}
-    </style>
+    <link rel="stylesheet" href="./style.css">
 	<script>
 	function show_age(){
 		var d = new Date();
@@ -158,6 +18,16 @@
 		else age = y-2005-1;
 		document.getElementById("myAge").innerHTML = age;
 		
+	}
+	var sections = ["intro", "projects", "contact", "experience", "msg"];
+	function show_section(id){
+		for(var i=0;i<sections.length;i++) {
+			if(sections[i] == id) {
+				document.getElementById(sections[i]).style.display = "block";
+			} else {
+				document.getElementById(sections[i]).style.display = "none";
+			}
+		}
 	}
 	window.addEventListener('scroll', function(e) {
 	  if(window.scrollY > 300) {
@@ -176,6 +46,7 @@
 				window.open(this.src, '_blank');
 			});
 		}
+		
 	}
 	function myFunction() {
 		var x = document.getElementById("nav");
@@ -185,6 +56,7 @@
 			x.className = "topnav";
 		}
 	}
+	
 	</script>
 </head>
 <body>
@@ -202,16 +74,16 @@
 			Liu Che - Homepage
 		</h2>
 		</a>
-			<a href="#intro" id="intro_link" style="display:none;">介紹</a>
-			<span class="nav_btn" onclick="document.getElementById('intro_link').click()">介紹</span>
-			<a href="#projects" id="projects_link" style="display:none;">我的作品</a>
-			<span class="nav_btn" onclick="document.getElementById('projects_link').click()">我的作品</span>
-			<a href="#contact" id="contact_link" style="display:none;">聯絡我</a>
-			<span class="nav_btn" onclick="document.getElementById('contact_link').click()">聯絡我</span>
-			<a href="#experience" id="experience_link" style="display:none;">經歷</a>
-			<span class="nav_btn" onclick="document.getElementById('experience_link').click()">經歷</span>
-			<a href="#msg" id="msg_link" style="display:none;">留言</a>
-			<span class="nav_btn" onclick="document.getElementById('msg_link').click()">留言</span>
+			<!--<a href="#intro" id="intro_link" style="display:none;">介紹</a>-->
+			<span class="nav_btn" onclick="show_section('intro');">介紹</span>
+			<!--<a href="#projects" id="projects_link" style="display:none;">我的作品</a>-->
+			<span class="nav_btn" onclick="show_section('projects');">我的作品</span>
+			<!--<a href="#contact" id="contact_link" style="display:none;">聯絡我</a>-->
+			<span class="nav_btn" onclick="show_section('contact');">聯絡我</span>
+			<!--<a href="#experience" id="experience_link" style="display:none;">經歷</a>-->
+			<span class="nav_btn" onclick="show_section('experience');">經歷</span>
+			<!--<a href="#msg" id="msg_link" style="display:none;">留言</a>-->
+			<span class="nav_btn" onclick="show_section('msg');">留言</span>
 			
 			<a class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -272,7 +144,6 @@
 		</article>
 	</section>
 	<section id="contact">
-		<div class="board-r">
 			<span style="font-size: 40px;font-weight:bold;color:rgb(50, 50, 60)">
 				Contact Me
 			</span>
@@ -325,11 +196,9 @@
 				GitHub
 			</a>
 			<br>-->
-		</div>
 	</section>
 	
 	<section id="experience">
-		<div class="board-l">
 			<span style="font-size: 40px;font-weight:bold;color:rgb(50, 50, 60)">
 				My Experience
 			</span>
@@ -337,33 +206,31 @@
 			<span style="font-size: 25px;font-weight:bold;color:rgb(50, 50, 60)">
 				Math
 			</span><br><br>
-			<img class = "picture" src="./certificates/00.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/08.jpg" width="100%";><br>
+			<img class = "picture" src="./certificates/00.jpg" width="250px";>
+			<img class = "picture" src="./certificates/08.jpg" width="250px";>
 			<hr>
 			<span style="font-size: 25px;font-weight:bold;color:rgb(50, 50, 60)">
 				Information
 			</span><br><br>
-			<img class = "picture" src="./certificates/09.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/10.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/02.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/03.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/11.jpg" width="100%";><br>
+			<img class = "picture" src="./certificates/09.jpg" width="250px";>
+			<img class = "picture" src="./certificates/02.jpg" width="250px";>
+			<img class = "picture" src="./certificates/03.jpg" width="250px";><br>
+			<img class = "picture" src="./certificates/11.jpg" width="250px";>
+			<img class = "picture" src="./certificates/10.jpg" width="250px";>
 			<hr>
 			<span style="font-size: 25px;font-weight:bold;color:rgb(50, 50, 60)">
 				Language
 			</span><br><br>
-			<img class = "picture" src="./certificates/04.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/05.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/07.jpg" width="100%";><br>
+			<img class = "picture" src="./certificates/04.jpg" width="250px";>
+			<img class = "picture" src="./certificates/07.jpg" width="250px";>
+			<img class = "picture" src="./certificates/05.jpg" width="250px";>
 			<hr>
 			<span style="font-size: 25px;font-weight:bold;color:rgb(50, 50, 60)">
 				Physics
 			</span><br><br>
-			<img class = "picture" src="./certificates/06.jpg" width="100%";><br>
-			<img class = "picture" src="./certificates/01.jpg" width="100%";><br>
-		</div>
+			<img class = "picture" src="./certificates/06.jpg" width="250px";>
+			<img class = "picture" src="./certificates/01.jpg" width="250px";>
 	</section>
-	
 	<section style="background-color:white;text-align:center;" id="msg">
 		<span style="font-size: 40px;font-weight:bold;color:rgb(50, 50, 60);">
 			Discussion
@@ -385,6 +252,8 @@
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 									
 		<script id="dsq-count-scr" src="//che-website.disqus.com/count.js" async></script>
+		
+		<script>show_section('intro');</script>
 		<section>
 			<footer id="footer">
 				Copyright &copy; 2017 <i><u>Liu Che</u></i>. All rights reserved. 
