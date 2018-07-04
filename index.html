@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>劉澈 Liu Che - Homepage</title>
     <link rel="stylesheet" href="./style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>
 	function show_age(){
 		var d = new Date();
@@ -16,27 +17,27 @@
 		var d = d.getDate();
 		if(m>9 && d>9) age = y-2005;
 		else age = y-2005-1;
-		document.getElementById("myAge").innerHTML = age;
+		$("#myAge").html(age);
 		
 	}
 	var sections = ["intro", "projects", "contact", "experience", "msg"];
 	function show_section(id){
 		for(var i=0;i<sections.length;i++) {
-			if(sections[i] == id) {
-				document.getElementById(sections[i]).style.display = "block";
-			} else {
-				document.getElementById(sections[i]).style.display = "none";
+			if(sections[i] != id) {
+				$("#"+sections[i]).hide(1000); 
 			}
 		}
+		$("#"+id).show(1000);
 	}
 	window.addEventListener('scroll', function(e) {
 	  if(window.scrollY > 300) {
-		document.getElementById("goToTop").style.display="block";
-		document.getElementById("goToTop").style.position="fixed";
-		document.getElementById("goToTop").style.top="0px";
-		document.getElementById("goToTop").style.left="0px";
+		$("#goToTop").css({"display" : "block",
+						 "position" : "fixed",
+						 "top" : "0px",
+						 "left" : "0px"});
+
 	  } else {
-		document.getElementById("goToTop").style.display="none";
+		$("#goToTop").css("display", "none");
 	  }
 	});
 	window.onload = function(){
@@ -58,6 +59,7 @@
 	}
 	
 	</script>
+	
 </head>
 <body>
 	<header>
@@ -98,6 +100,7 @@
 	</a>
 	<span id="top" style="position:absolute;top:0px;"></span>
 	<section id="intro">
+		<center>
 		<span style="font-size: 70px;font-weight:bold;">Welcome!</span>
 		<br>
 		Welcome to my website. My name is <i><u>Liu Che</u></i>. I am
@@ -105,6 +108,9 @@
 		I like to make things and I have made many interesting projects.
 		On My website, I will share some of my projects with you.
 		<script>show_age();</script>
+		</center>
+		<br>
+		<img src = "./me.jpg">
 	</section>
 	
 	<section id="projects">
@@ -231,10 +237,11 @@
 			<img class = "picture" src="./certificates/06.jpg" width="250px";>
 			<img class = "picture" src="./certificates/01.jpg" width="250px";>
 	</section>
-	<section style="background-color:white;text-align:center;" id="msg">
+	<section style="background-color:white;text-align:center;margin-top:0px;" id="msg">
 		<span style="font-size: 40px;font-weight:bold;color:rgb(50, 50, 60);">
 			Discussion
 		</span>
+		<br><br>
 		<div id="disqus_thread" class="dsq"></div>
 		<script>
 		var disqus_config = function () {
