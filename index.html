@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Amaranth|Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css"/>
 	<title>劉澈 Liu Che - Homepage</title>
     <link rel="stylesheet" href="./style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -20,7 +21,7 @@
 		$("#myAge").html(age);
 		
 	}
-	var sections = ["intro", "projects", "contact", "experience", "msg"];
+	var sections = ["intro", "projects", "contact", "experience"];
 	function show_section(id){
 		for(var i=0;i<sections.length;i++) {
 			if(sections[i] != id) {
@@ -71,10 +72,10 @@
 		</a>-->
 		<nav id="nav" class="topnav">
 			<a href="./index.html" style="color:black;text-decoration: none;display:inline-block;">
-		<h2 id="logo" style="margin-left:30px;">
-			<span class="ch">劉澈</span>
+		<h1 id="logo" style="margin-left:30px;color:white;">
+			劉澈
 			Liu Che - Homepage
-		</h2>
+		</h1>
 		</a>
 			<!--<a href="#intro" id="intro_link" style="display:none;">介紹</a>-->
 			<span class="nav_btn" onclick="show_section('intro');">介紹</span>
@@ -84,8 +85,8 @@
 			<span class="nav_btn" onclick="show_section('contact');">聯絡我</span>
 			<!--<a href="#experience" id="experience_link" style="display:none;">經歷</a>-->
 			<span class="nav_btn" onclick="show_section('experience');">經歷</span>
-			<!--<a href="#msg" id="msg_link" style="display:none;">留言</a>-->
-			<span class="nav_btn" onclick="show_section('msg');">留言</span>
+			<a href="#msg" id="msg_link" style="display:none;">留言</a>
+			<span class="nav_btn" onclick='$("html, body").animate({ scrollTop: $(document).height()-600 }, 100);'>留言</span>
 			
 			<a class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
@@ -95,10 +96,9 @@
 	</header>
 	
 	
-	<a href="#top" id="goToTop" class="gototop">
+	<a onclick = '$("html, body").animate({ scrollTop: 0 }, 100)' id="goToTop" class="gototop">
 		<img width="30px;" style="z-index:2;position:fixed;top:15px;" src="./goToTop.png">
 	</a>
-	<span id="top" style="position:absolute;top:0px;"></span>
 	<section id="intro">
 		<center>
 		<span style="font-size: 70px;font-weight:bold;">Welcome!</span>
@@ -114,7 +114,7 @@
 	</section>
 	
 	<section id="projects">
-		<span style="font-size: 40px;font-weight:bold;color:white;">
+		<span style="font-size: 40px;font-weight:bold;">
 			My Projects
 		</span><br><br>
 		<article class="project" style="background-color:Lavender ;">
@@ -237,7 +237,7 @@
 			<img class = "picture" src="./certificates/06.jpg" width="250px";>
 			<img class = "picture" src="./certificates/01.jpg" width="250px";>
 	</section>
-	<section style="background-color:white;text-align:center;margin-top:0px;padding-bottom:100px;" id="msg">
+	<section style="text-align:center;margin-top:0px;padding-bottom:100px;" id="msg">
 		<span style="font-size: 40px;font-weight:bold;color:rgb(50, 50, 60);">
 			Discussion
 		</span>

@@ -1,18 +1,18 @@
 html, body {
-	background-color: rgba(50, 50, 60, 0.7);
-	font-family: 'Amaranth', sans-serif;
+	background-color: #ededed;
+	font-family: 'cwTeXYen', 'Amaranth', sans-serif;
 	margin: 0px; scroll-behavior: smooth;
-	background-image: url('bg.jpg');
+	/*background-image: url('bg.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover;*/
 	overflow-x: hidden;
 }
 iframe{
 	margin: 0 auto;
 }
 header {
-	background-color: rgba(255, 255, 255, 0.95);
+	background-color: LightSkyBlue ;/*rgba(255, 255, 255, 0.95);*/
 	width: 100%; padding-left: 8px;
 	position: fixed;
 	top: 0px; left: 0px; z-index:1;
@@ -21,13 +21,10 @@ header {
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */ 
+	color: white;
 }
 header>#logo {
-	margin:3px;
 	display: inline-block;
-}
-header>#logo>.ch {
-	font-family: 'Lobster', cursive;
 }
 header>#nav {
 	display: inline-block;
@@ -42,7 +39,6 @@ section {
 	font-size: 20px;
 }
 #intro {
-	color: white;
 	margin: 0px 20% 100px 20%;
 }
 #contact{
@@ -64,10 +60,17 @@ section {
 }
 #nav .nav_btn{
 	margin:0px;
+	margin-left: 15px;
 	padding:15px;
+	font-size: 30px;
+	/*background-color: SteelBlue ;*/
+	border-radius: 30px;
 }
 #nav span:hover{
-	background-color: #ddd;
+	background-color: CornflowerBlue ;
+}
+#nav span:active{
+	color: black;
 }
 .topnav .icon {
 	display:none;
