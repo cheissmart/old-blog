@@ -48,7 +48,14 @@
 				window.open(this.src, '_blank');
 			});
 		}
-		
+		var isChrome = window.chrome && window.chrome.webstore;
+		if(!isChrome) {
+		alert("sss");
+			var notice = document.createElement("div");
+			notice.style.height="100px";
+			notice.style.width="100px";
+			notice.style.background-color="black";
+		}
 	}
 	function myFunction() {
 		var x = document.getElementById("nav");
@@ -104,7 +111,7 @@
 		<span style="font-size: 70px;font-weight:bold;">Welcome!</span>
 		<br>
 		Welcome to my website. My name is <i><u>Liu Che</u></i>. I am
-		<span id="myAge"></span> years old and I am a home school student.
+		<span id="myAge"></span> years old and a home school student.
 		I like to make things and I have made many interesting projects.
 		On My website, I will share some of my projects with you.
 		<script>show_age();</script>
@@ -214,6 +221,7 @@
 			</span><br><br>
 			<img class = "picture" src="./certificates/00.jpg" width="250px";>
 			<img class = "picture" src="./certificates/08.jpg" width="250px";>
+			<img class = "picture" src="./certificates/20.jpg" width="250px";>
 			<hr>
 			<span style="font-size: 25px;font-weight:bold;color:rgb(50, 50, 60)">
 				Information
