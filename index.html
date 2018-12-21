@@ -41,6 +41,7 @@
 		$("#goToTop").css("display", "none");
 	  }
 	});
+	var isChrome;
 	window.onload = function(){
 		var pictures = document.getElementsByClassName("picture");
 		for(var i=0;i<pictures.length;i++) {
@@ -48,7 +49,7 @@
 				window.open(this.src, '_blank');
 			});
 		}
-		var isChrome = window.chrome && window.chrome.webstore;
+		isChrome = window.chrome && window.chrome.webstore;
 		if(!isChrome) {
 		alert("sss");
 			var notice = document.createElement("div");
