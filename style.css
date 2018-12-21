@@ -33,6 +33,24 @@ header>#nav>span {
 	font-size: 25px;
 	margin-left: 30px;
 }
+.notice{
+	display:none;
+	width: 300px; height: 30px; line-height: 30px;
+	padding: 5px;
+	background-color: Beige;
+	position: fixed; top: 0px; right:0px;
+	z-index: 100;
+	
+}
+.x{
+	position: absolute; top: -10px; right: 0px;
+	color: blue;
+}
+.x:hover{
+	cursor: default;
+	color: purple;
+}
+
 section {
 	padding-top: 100px;
 	margin-top: 100px;

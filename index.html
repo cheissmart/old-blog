@@ -42,7 +42,11 @@
 	  }
 	});
 	window.onload = function(){
-		checkBrowser();
+		// check browser
+		var isChrome = navigator.userAgent.search("Chrome");
+		if(isChrome == -1) {			
+			$("#notice").css("display", "block");
+		}
 		
 		
 		var pictures = document.getElementsByClassName("picture");
@@ -61,18 +65,6 @@
 			x.className = "topnav";
 		}
 	}
-	function checkBrowser(){
-		alert("sss");
-		var isChrome = navigator.userAgent.search("Chrome") != -1;
-		if(!isChrome) {
-		alert("aaa");
-			var notice = document.createElement("div");
-			notice.style.height="100px";
-			notice.style.width="100px";
-			notice.style.background-color="black";
-		}
-	}
-	
 	</script>
 	
 </head>
@@ -109,6 +101,12 @@
 			
 	</header>
 	
+	<div id="notice" class = "notice">
+		It is recommended to use Google Chrome.
+		<div class="x" onclick='$("#notice").css("display", "none");'>
+			x
+		</div>
+	</div>
 	
 	<a onclick = '$("html, body").animate({ scrollTop: 0 }, 100)' id="goToTop" class="gototop">
 		<img width="30px;" style="z-index:2;position:fixed;top:15px;" src="./goToTop.png">
