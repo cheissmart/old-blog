@@ -1,0 +1,67 @@
+
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<input type="text" id="id-input" value="cheissmart" placeholder="your cf handle"/>
+	<button id="submit" onclick='draw(document.getElementById("id-input").value);'>Draw</button>
+	<script>
+	var input = document.getElementById("id-input");
+		input.addEventListener("keydown", function(event) {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			document.getElementById("submit").click();
+		}
+	});
+	</script>
+	<div id="p"><canvas id="line-chart" width="800" height="450"></canvas></div>
+	<script>
+		function draw (id) {
+			var element = document.getElementById("line-chart");
+			element.parentNode.removeChild(element);
+			var p = document.getElementById("p");
+			var newElement = document.createElement("canvas");
+			newElement.setAttribute('id', "line-chart");
+			p.appendChild(newElement);
+			function reqListener () {
+				var obj = JSON.parse(this.responseText);
+				var res = obj.result;
+				var data = [];
+				for(var i=0;i<res.length;i++) {
+					data.push({x: new Date(res[i].ratingUpdateTimeSeconds*1000), y: res[i].newRating});
+				}
+				new Chart(document.getElementById("line-chart"), {
+				  type: 'line',
+				  data: {
+					datasets: [{
+						data: data,
+						label: id,
+						borderColor: "#3e95cd",
+						fill: false
+					  }
+					]
+				  },
+				  options: {
+					  scales: {
+						xAxes: [{
+							type: 'time',
+							time: {
+								displayFormats: {
+									quarter: 'MMM YYYY'
+								}
+							}
+						}]
+					},
+					title: {
+					  display: true,
+					  text: id+' codefroeces rating'
+					}
+				  }
+				});
+			}
+			var oReq = new XMLHttpRequest();
+			oReq.addEventListener("load", reqListener);
+			oReq.open("GET", "https://codeforces.com/api/user.rating?handle="+id);
+			oReq.send();
+		}
+		draw(document.getElementById("id-input").value);
+	</script>
